@@ -1,0 +1,137 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Stride.",
+	"text": {
+		"plugins": {
+			"stride": {
+				"name": "Stride",
+				"description": "Integrate your game with Stride Academy.",
+				"help-url": "http://www.strideacademy.com/stride_game_builder.php",
+				"properties": {
+				},
+				"aceCategories": {
+					"basic": "Basic",
+					"statistics": "Statistics",
+					"timer": "Timer",
+					"triggers": "Triggers",
+					"preferences": "Preferences",
+					"storage": "Storage",
+					"settings": "Settings"
+				},
+				"conditions": {
+					"strongetgamedata0": {
+						"list-name": "On get game data",
+						"display-text": "On get game data",
+						"description": "Triggered when game data requested with 'Get game data' is received."
+						},
+					"strontimerdone1": {
+						"list-name": "On timer done",
+						"display-text": "On timer done",
+						"description": "Triggered when the external session timer has expired."
+						},
+					"strissoundenabled2": {
+						"list-name": "Is sound enabled",
+						"display-text": "Is sound enabled",
+						"description": "If TRUE, the game is allowed to play sounds."
+						}
+				},
+				"actions": {
+					"strexit0": {
+						"list-name": "Exit",
+						"display-text": "Exit",
+						"description": "Exit the game"
+					},
+					"strsubmitgamescore1": {
+						"list-name": "Submit Score",
+						"display-text": "Submit player's points earned {0} and high score {1}",
+						"description": "Submit points earned and high score to Stride Academy.",
+						"params": {
+							"points0": { "name":"Points", "desc":"The number of points scores in the current game session."},
+							"highscore1": { "name":"HighScore", "desc":"The player's high score."}
+						}
+					},
+					"strsetgamedata2": {
+						"list-name": "Set game data",
+						"display-text": "Store player data {1} under key name {0}",
+						"description": "Store player data on the Stride Academy server.",
+						"params": {
+							"key0": { "name":"Key", "desc":"Identifies the data to be stored."},
+							"value1": { "name":"Value", "desc":"The string value to be stored."}
+						}
+					},
+					"strgetgamedata3": {
+						"list-name": "Get game data",
+						"display-text": "Retrieve player data under key name {0}",
+						"description": "Retrieve player data from the Stride Academy server.",
+						"params": {
+							"key0": { "name":"Key", "desc":"Identifies the data to be retrieved."}
+						}
+					},
+					"strstarttimer4": {
+						"list-name": "Start timer",
+						"display-text": "Start countdown timer {0}",
+						"description": "Starts the Stride Academy external countdown timer.",
+						"params": {
+							"showmessage0": { "name":"showMessage", "desc":"Set this to 1 to cause Stride Academy to show a 'Times up' message to the user."}
+						}
+					},
+					"strstoptimer5": {
+						"list-name": "Stop timer",
+						"display-text": "Stop countdown timer",
+						"description": "Stops (pauses) the Stride Academy external countdown timer."
+					},
+					"strawardbadge6": {
+						"list-name": "Award badge",
+						"display-text": "Award the player badge {0}",
+						"description": "Award the player a badge",
+						"params": {
+							"badgename0": { "name":"BadgeName", "desc":"Identifies the badge to be awarded."}
+						}
+					}
+				},
+				"expressions": {
+					"sessionseconds0": {
+						"description": "If using your own timer, the amount of time to allow for one session.",
+						"translated-name": "sessionSeconds"
+						},
+					"defaultgamedata1": {
+						"description": "Data that was previously stored using the key 'playerData'.",
+						"translated-name": "defaultGameData"
+						},
+					"gamedata2": {
+						"description": "The response data from 'Get game data'.",
+						"translated-name": "gameData"
+						},
+					"highscore3": {
+						"description": "The players previously reported highScore.",
+						"translated-name": "highScore"
+						},
+					"badgelist4": {
+						"description": "A comma-delimited list of badges previously earned.",
+						"translated-name": "badgeList"
+						},
+					"enablesound5": {
+						"description": "Should sound be enabled? 0 = no, 1 = yes.",
+						"translated-name": "enableSound"
+						},
+					"playername6": {
+						"description": "The player's name.",
+						"translated-name": "playerName"
+						},
+					"gender7": {
+						"description": "The player's gender: M = male, F = female.",
+						"translated-name": "gender"
+						},
+					"gradelevel8": {
+						"description": "The player's grade level: -1 = PreK, 0 = KG, 1 = 1st, etc.",
+						"translated-name": "gradeLevel"
+						},
+					"ethnicity9": {
+						"description": "A 1-2 character code for the player's ethnicity.",
+						"translated-name": "ethnicity"
+						}
+				}
+			}
+		}
+	}
+}

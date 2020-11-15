@@ -1,0 +1,26 @@
+{
+	"is-c3-addon": true,
+	"type": "plugin",
+	"name": "Stride",
+	"id": "Stride",
+	"version": "1.0.0.0",
+	"author": "LTS Education Systems",
+	"website": "http://www.strideacademy.com/stride_game_builder.php",
+	"documentation": "http://www.strideacademy.com/stride_game_builder.php",
+	"description": "Integrate your game with Stride Academy.",
+	"editor-scripts": [
+						"plugin.js",
+						"type.js",
+						"instance.js"
+					],
+	"file-list": [
+		"c2runtime/runtime.js",
+		"lang/en-US.json",
+		"aces.json",
+		"addon.json",
+		"icon.png",
+		"plugin.js",
+		"type.js",
+		"instance.js"
+	]
+}

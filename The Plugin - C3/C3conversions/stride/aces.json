@@ -1,0 +1,219 @@
+{
+	"basic": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 0,
+				"id": "strexit0",
+				"scriptName": "strExit",
+				"highlight": false
+			}
+		],
+		"expressions": [
+		]
+	},
+	"statistics": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "strsubmitgamescore1",
+				"scriptName": "strSubmitGameScore",
+				"highlight": false,
+				"params": [
+					{"id":"points0", "type":"number"},
+					{"id":"highscore1", "type":"number"}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "strsetgamedata2",
+				"scriptName": "strSetGameData",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"playerData\""},
+					{"id":"value1", "type":"string"}
+				]
+			},
+			{
+				"c2id": 3,
+				"id": "strgetgamedata3",
+				"scriptName": "strGetGameData",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"playerData\""}
+				]
+			},
+			{
+				"c2id": 6,
+				"id": "strawardbadge6",
+				"scriptName": "strAwardBadge",
+				"highlight": false,
+				"params": [
+					{"id":"badgename0", "type":"string"}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 3,
+				"id": "highscore3",
+				"expressionName": "highScore",
+				"scriptName": "highScore",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 6,
+				"id": "playername6",
+				"expressionName": "playerName",
+				"scriptName": "playerName",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 7,
+				"id": "gender7",
+				"expressionName": "gender",
+				"scriptName": "gender",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 8,
+				"id": "gradelevel8",
+				"expressionName": "gradeLevel",
+				"scriptName": "gradeLevel",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 9,
+				"id": "ethnicity9",
+				"expressionName": "ethnicity",
+				"scriptName": "ethnicity",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	},
+	"timer": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 4,
+				"id": "strstarttimer4",
+				"scriptName": "strStartTimer",
+				"highlight": false,
+				"params": [
+					{"id":"showmessage0", "type":"number", "initialValue":"1"}
+				]
+			},
+			{
+				"c2id": 5,
+				"id": "strstoptimer5",
+				"scriptName": "strStopTimer",
+				"highlight": false
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 0,
+				"id": "sessionseconds0",
+				"expressionName": "sessionSeconds",
+				"scriptName": "sessionSeconds",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	},
+	"triggers": {
+		"conditions": [
+			{
+				"c2id": 0,
+				"id": "strongetgamedata0",
+				"scriptName": "strOnGetGameData",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 1,
+				"id": "strontimerdone1",
+				"scriptName": "strOnTimerDone",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"preferences": {
+		"conditions": [
+			{
+				"c2id": 2,
+				"id": "strissoundenabled2",
+				"scriptName": "strIsSoundEnabled",
+				"isStatic": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"storage": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 1,
+				"id": "defaultgamedata1",
+				"expressionName": "defaultGameData",
+				"scriptName": "defaultGameData",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 2,
+				"id": "gamedata2",
+				"expressionName": "gameData",
+				"scriptName": "gameData",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 4,
+				"id": "badgelist4",
+				"expressionName": "badgeList",
+				"scriptName": "badgeList",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	},
+	"settings": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 5,
+				"id": "enablesound5",
+				"expressionName": "enableSound",
+				"scriptName": "enableSound",
+				"isDeprecated": "true",
+				"highlight": false,
+				"returnType": "any"
+			}
+		]
+	}
+}

@@ -1,0 +1,67 @@
+﻿function GetPluginSettings()
+{
+return {
+"name":			"XML",
+"id":			"XML",
+"version":		"1.0",
+"description":	"Load XML files from strings and read the data in the XML document using XPath expressions.",
+"author":		"Scirra",
+"help url":		"http://www.scirra.com/manual/139/xml",
+"category":		"Data & Storage",
+"type":			"object",
+"rotatable":	false,
+"flags":		0
+};
+};
+AddStringParam("XPath", "The XPath expression to evaluate, returning a series of nodes to iterate.");
+AddCondition(0, cf_looping, "For each node", "XML", "For each node <i>{0}</i>", "Iterate the nodes returned by an XPath expression.", "ForEach");
+AddStringParam("XML", "A string containing the XML document to load.");
+AddAction(0, 0, "Load", "Document", "Load XML document from string <i>{0}</i>", "Load an XML document from a string.", "Load");
+AddStringParam("XPath", "The XPath expression to evaluate.");
+AddExpression(0, ef_return_number, "",		"XML",	"NumberValue", "Retrieve a single number value from an XPath expression.");
+AddStringParam("XPath", "The XPath expression to evaluate.");
+AddExpression(1, ef_return_string, "",		"XML",	"StringValue", "Retrieve a single string from an XPath expression.");
+AddStringParam("XPath", "The XPath expression to evaluate.");
+AddExpression(2, ef_return_number, "",		"XML",	"NodeCount", 	"Count the number of nodes returned by an XPath expression.");
+ACESDone();
+var property_list = [
+];
+function CreateIDEObjectType()
+{
+return new IDEObjectType();
+}
+function IDEObjectType()
+{
+assert2(this instanceof arguments.callee, "Constructor called as a function");
+}
+IDEObjectType.prototype.CreateInstance = function(instance)
+{
+return new IDEInstance(instance);
+}
+function IDEInstance(instance, type)
+{
+assert2(this instanceof arguments.callee, "Constructor called as a function");
+this.instance = instance;
+this.type = type;
+this.properties = {};
+for (var i = 0; i < property_list.length; i++)
+this.properties[property_list[i].name] = property_list[i].initial_value;
+}
+IDEInstance.prototype.OnInserted = function()
+{
+}
+IDEInstance.prototype.OnDoubleClicked = function()
+{
+}
+IDEInstance.prototype.OnPropertyChanged = function(property_name)
+{
+}
+IDEInstance.prototype.OnRendererInit = function(renderer)
+{
+}
+IDEInstance.prototype.Draw = function(renderer)
+{
+}
+IDEInstance.prototype.OnRendererReleased = function(renderer)
+{
+}
