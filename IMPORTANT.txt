@@ -1,5 +1,6 @@
 The examples (and project) are based on the work of Davit Masia. 
 
+Copy content from the plugin to: C:\Program Files\Construct 2\exporters\html5 (default).
 
 The conversion to Babyon 4.2 (from Babylon 2) is far from ready/perfect, but a top-down game or a platformer with skeletons seems possible.
 Also a (non-shooter atm) fps game (adventure, movement) is also possible in the current state.
