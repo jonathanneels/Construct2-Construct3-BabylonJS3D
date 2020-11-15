@@ -21,6 +21,6 @@ To-do's;
 * FPS controls working
 * The fire textures, raycasting (and maybe other things) are not working in the current build.
 * When new-scene is ready needs to be better. It's current 500 ms before 'is true' in runtime.js (new scene) and does not work correctly.
-* Loading new scene needs some more polish
+* Loading new scene needs some more polish.
 * vr stuff and new features.
 * Mouse clicks => sometimes issues. Has to do with Z-index.
