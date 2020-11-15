@@ -1,5 +1,5 @@
 # Construct2-Construct3-BabylonJS3D
-An updated version of Babylon JS for Consstruct 2 and Construct 3 (Babylon js version 4.2)
+An updated version of Babylon JS for Construct 2 and Construct 3 (Babylon js version 4.2)
 
 The examples (and project) are based on the work of Davit Masia. 
 
